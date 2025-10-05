@@ -130,6 +130,6 @@ This project was developed with invaluable guidance and expertise. Special thank
 
 ## 📧 Contact
 
-**Saumy Tiwari**
+**Anjali Yadav**
 
 *   **GitHub:** [Anjali-9506](https://github.com/Anjali-9506)
