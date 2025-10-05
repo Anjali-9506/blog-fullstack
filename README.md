@@ -77,7 +77,7 @@ Follow these steps to get a local copy of the project up and running.
 
 1.  **Clone the repository:**
     ```bash
-    git clone https://github.com/Saumy-TOXOTIS/blog-fullstack.git
+    git clone https://github.com/Anjali-9506/blog-fullstack.git
     cd blog-fullstack
     ```
 
@@ -133,3 +133,6 @@ This project was developed with invaluable guidance and expertise. Special thank
 **Anjali Yadav**
 
 *   **GitHub:** [Anjali-9506](https://github.com/Anjali-9506)
+
+
+<--b068aed7425c5b78807bf833597b755986790616ef4d844f43b4611dcc47f8fa-->
