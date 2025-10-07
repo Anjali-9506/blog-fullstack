@@ -47,12 +47,12 @@ function Navbar({ isAuthenticated, logout }) {
             {/* Desktop Navigation Links (hidden on mobile) */}
             <div className="hidden md:flex items-center space-x-2">
               {/* --- ABOUT BUTTON --- */}
-              {/* <button onClick={() => navigate('/about')} className="relative group flex items-center gap-2 px-4 py-2 md:px-5 md:py-2.5 bg-gray-800/70 hover:bg-gray-700/80 border border-gray-700 rounded-xl hover:border-teal-500 transition-all duration-300 hover:shadow-teal-900/30 shadow-md">
+              <button onClick={() => navigate('/about')} className="relative group flex items-center gap-2 px-4 py-2 md:px-5 md:py-2.5 bg-gray-800/70 hover:bg-gray-700/80 border border-gray-700 rounded-xl hover:border-teal-500 transition-all duration-300 hover:shadow-teal-900/30 shadow-md">
                 <div className="absolute inset-0 rounded-xl bg-gradient-to-r from-teal-500/10 to-cyan-400/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 <svg className="h-4 w-4 md:h-5 md:w-5 text-teal-400 group-hover:text-teal-300 transition-colors" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
                 <span className="font-medium text-xs md:text-sm bg-gradient-to-r from-teal-200 to-cyan-200 bg-clip-text text-transparent">About</span>
                 <div className="absolute -bottom-1 left-1/2 w-0 h-0.5 bg-gradient-to-r from-teal-500 to-cyan-500 rounded-full transition-all duration-300 group-hover:left-0 group-hover:w-full"></div>
-              </button> */}
+              </button>
 
               {isAuthenticated && (
                 <>
@@ -124,7 +124,7 @@ function Navbar({ isAuthenticated, logout }) {
             </div>
             <div className="rounded-xl p-2 bg-[#111827e6] flex flex-col gap-y-2">
               <>
-                {/* <MobileNavLink icon={<svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>} text="About" onClick={() => navigate('/about')} /> */}
+                <MobileNavLink icon={<svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>} text="About" onClick={() => navigate('/about')} />
                 {isAuthenticated && navLinks.map(link => (
                   <MobileNavLink key={link.to} {...link} icon={React.cloneElement(link.icon, { className: "w-6 h-6" })} onClick={() => navigate(link.to)} />
                 ))}

@@ -11,6 +11,7 @@ import UserProfile from './components/UserProfile';
 import Footer from './components/Footer';
 import { SocketContextProvider } from './context/SocketContext';
 import ChatPage from './components/ChatPage';
+import AboutPage from './components/AboutPage';
 import './App.css';
 
 const ProtectedLayout = () => {
@@ -51,6 +52,7 @@ function AppContent() {
       <Navbar isAuthenticated={!!token} logout={handleLogout} />
       <main className="flex-grow">
         <Routes>
+          <Route path="/about" element={<AboutPage />} />
 
           <Route element={<PublicLayout />}>
             <Route path="/login" element={<AuthForm isLogin />} />
